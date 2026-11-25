@@ -891,40 +891,37 @@
         transform: none;
       }
     }
-    .social-links {
+    .social-links,
+.social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
+.social-links a,
 .social-icons a {
-    width: 45px;
-    height: 45px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid var(--line);
-    border-radius: 14px;
-
-    background: var(--surface-2);
-    color: var(--text);
-
-    font-size: 19px;
-
-    transition: all 0.3s ease;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 19px;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect */
+.social-links a:hover,
 .social-icons a:hover {
-    background: #D4FF63;
-    color: #151710;
-    border-color: #D4FF63;
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(212, 255, 99, 0.2);
+  background: var(--accent);
+  color: #151710;
+  border-color: var(--accent);
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(212, 255, 99, 0.25);
 }
   </style>
 </head>
