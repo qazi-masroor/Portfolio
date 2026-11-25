@@ -899,17 +899,18 @@
   flex-wrap: wrap;
 }
 
-.social-links a {
-  color: inherit;
-  font-size: 23px;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
+.social-icons a {
+  display: inline-block; /* Required so transform works on links */
+  color: #333;           /* Default icon color */
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
-  opacity: 0.6;
-}
-  </style>
+.social-icons a:hover {
+  color: #d4ff63; /* Replace with your portfolio's accent color */
+  transform: translateY(-5px) scale(1.1); /* Lifts up and slightly enlarges */
+}  </style>
 </head>
 
 <body>
